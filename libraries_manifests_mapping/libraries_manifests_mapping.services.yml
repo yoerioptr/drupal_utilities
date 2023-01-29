@@ -1,0 +1,8 @@
+services:
+  # EventSubscribers
+  libraries_manifests_mapping.event_subscriber.libraries_manifests_mapping:
+    class: \Drupal\libraries_manifests_mapping\EventSubscriber\LibrariesManifestsMapping
+    arguments:
+      - '@extension.list.theme'
+    tags:
+      - { name: 'event_subscriber' }

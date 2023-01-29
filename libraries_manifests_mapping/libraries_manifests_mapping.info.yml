@@ -1,0 +1,8 @@
+name: 'Libraries manifests mapping'
+type: module
+description: 'Allows dynamic library assets definition by manifests file'
+package: 'Drupal utilities'
+core_version_requirement: ^9.0 || ^10
+
+dependencies:
+  - drupal:core_event_dispatcher

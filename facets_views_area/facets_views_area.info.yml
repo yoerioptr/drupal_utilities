@@ -1,0 +1,11 @@
+name: 'Facets views area'
+type: module
+description: 'Adds a views area to display the facets configured for the current view'
+package: 'Drupal utilities'
+core_version_requirement: ^9.0 || ^10
+
+dependencies:
+  - drupal:facets
+  - drupal:search_api
+  - drupal:views
+  - drupal:views_event_dispatcher
