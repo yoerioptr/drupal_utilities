@@ -1,0 +1,9 @@
+{
+  "name": "yoerioptr/drupal_utilities",
+  "description": "A collection of utilities for Drupal",
+  "type": "drupal-module",
+  "require": {
+    "drupal/core": "^9 || ^10",
+    "drupal/hook_event_dispatcher": "^3.3"
+  }
+}

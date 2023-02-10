@@ -1,0 +1,5 @@
+name: 'Field fallback'
+type: module
+description: 'Adds a fallback value to fields.'
+package: 'Drupal utilities'
+core_version_requirement: ^9.0 || ^10
