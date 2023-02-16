@@ -1,6 +1,6 @@
 services:
   # Event subscribers
   facets_views_area.event_subscriber:
-    class: \Drupal\facets_views_area\EventSubscriber\DefineFacetsViewsArea
+    class: Drupal\facets_views_area\EventSubscriber\DefineFacetsViewsArea
     tags:
       - { name: 'event_subscriber' }

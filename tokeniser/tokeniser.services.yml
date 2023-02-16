@@ -1,0 +1,19 @@
+services:
+  tokeniser.resolver.token:
+    class: Drupal\tokeniser\Token\TokenResolver
+    arguments:
+      - '@service_container'
+
+  # EventSubscribers
+  tokeniser.event_subscriber.define_tokens:
+    class: Drupal\tokeniser\EventSubscriber\DefineTokens
+    arguments:
+      - 'tokeniser.resolver.token'
+    tags:
+      - { name: 'event_subscriber' }
+  tokeniser.event_subscriber.perform_replacements:
+    class: Drupal\tokeniser\EventSubscriber\PerformReplacements
+    arguments:
+      - 'tokeniser.resolver.token'
+    tags:
+      - { name: 'event_subscriber' }

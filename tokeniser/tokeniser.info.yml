@@ -1,0 +1,8 @@
+name: 'Tokeniser'
+type: module
+description: 'Helper module for implementing custom tokens'
+package: 'Drupal utilities'
+core_version_requirement: ^9.0 || ^10
+
+dependencies:
+  - drupal:core_event_dispatcher
